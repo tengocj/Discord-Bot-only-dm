@@ -8,7 +8,7 @@ class OnlyDmBot(commands.Cog):
 
     @commands.slash_command(name="secret", description="Share a secret message")
     async def secret(self, ctx: commands.Context, message: str):
-        if not isinstance(ctx.channel, discord.DMChannel):
+        if not isinstance(ctx.channel, discord.channel.PartialMessageable):
             await ctx.respond("This command can only be used in direct messages.", ephemeral=True)
             return
         await ctx.send(f"Your secret message is: {message}")
