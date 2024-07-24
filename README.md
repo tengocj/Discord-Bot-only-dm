@@ -23,7 +23,7 @@ OnlyDmBot is a simple Discord bot that demonstrates how to create a slash comman
 
 3. Run the bot:
     ```bash
-    python bot.py
+    python main.py
     ```
 
 ## Usage
